@@ -14,6 +14,10 @@ For comprehensive details on the dataset splitting, experimental rigour, and arc
 
 ---
 
+## My contribution
+
+I contributed to developing the team's human-action-recognition model. The notebook and experimental pipeline are shared team work; the four project authors are credited above.
+
 ## Project Overview
 
 Real-world human behaviour is dynamic, and while deep learning achieves high accuracy in static image classification, sequence-based architectures are required to extract deep temporal patterns. This project transitions from spatial feature extraction to joint spatiotemporal modelling.
