@@ -1,8 +1,10 @@
 # Human Action Recognition via Advanced Sequence Modelling
 
+**[Open in Colab](https://colab.research.google.com/github/DarianRobert/Human-Action-Recognition/blob/master/COMP703_Project.ipynb)** · **[Read the report](<COMP703 Project.pdf>)**
+
 This repository contains the code and resources for a Machine Learning sequence modelling project, developed as an investigation into Video Action Recognition (VAR). The primary goal is to allow computational systems to automatically detect, label, and analyse human activities directly from raw, sequential video streams. 
 
-For comprehensive details on the dataset splitting, experimental rigour, and architectural comparisons, please refer to the **COMP703 Project.pdf** document.
+For comprehensive details on the dataset splitting, experimental rigour, and architectural comparisons, please refer to the [COMP703 Project.pdf](<COMP703 Project.pdf>) document.
 
 ### Project Team
 *   **Arjun Ramphal**
@@ -65,7 +67,13 @@ The code will automatically mount your Google Drive to `/content/drive` and targ
 
 ### Prerequisites
 Ensure you have the following Python libraries installed in your runtime:
-`torch`, `torchvision`, `opencv-python`, `optuna`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `tqdm`.
+Install the dependencies listed in [requirements.txt](requirements.txt). The notebook also imports Pillow for image conversion. In a Colab code cell, run:
+
+```python
+%pip install -r https://raw.githubusercontent.com/DarianRobert/Human-Action-Recognition/master/requirements.txt
+```
+
+This dependency list is based on the notebook imports; the original runtime was not supplied as a version-locked environment.
 
 ---
 
@@ -78,3 +86,17 @@ The project is structured into modular code blocks designed to be executed seque
 3.  **Foundational Sequence Modelling:** Run the third code block to execute an isolated Optuna optimization search and deep-train the foundational recurrent architectures (RNN, GRU, LSTM, BiLSTM).
 4.  **Advanced Sequence Modelling:** Run the fourth code block to optimize and train the Vision Sequence Transformer and Bidirectional SSM (Mamba) models.
 5.  **Benchmarking & Evaluation:** Run the final code block to evaluate all trained models against the validation set. This compiles the diagnostic performance metrics and generates a 6-panel normalized confusion matrix grid.
+
+
+## Repository contents
+
+| File | Purpose |
+| --- | --- |
+| [COMP703_Project.ipynb](COMP703_Project.ipynb) | Colab notebook containing the five pipeline stages |
+| [COMP703 Project.pdf](<COMP703 Project.pdf>) | Project report and experimental results |
+| [Course Project.pdf](<Course Project.pdf>) | Original course project brief |
+| [requirements.txt](requirements.txt) | Notebook dependencies |
+
+The KTH videos and generated features/models are not bundled in this repository. The final notebook block evaluates the validation split; consult the report when interpreting the published results.
+
+[Original team repository](https://github.com/ArjunRamphal/COMP703HumanActionRecognition) · [My portfolio](https://darianrobert.github.io/)

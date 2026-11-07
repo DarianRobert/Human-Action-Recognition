@@ -1,0 +1,12 @@
+# Notebook dependencies; run with Google Colab, which provides google.colab.
+# Original package versions were not retained.
+torch
+torchvision
+opencv-python
+optuna
+numpy
+matplotlib
+seaborn
+scikit-learn
+tqdm
+Pillow
