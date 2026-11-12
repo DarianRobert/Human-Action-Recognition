@@ -104,3 +104,7 @@ The project is structured into modular code blocks designed to be executed seque
 The KTH videos and generated features/models are not bundled in this repository. The final notebook block evaluates the validation split; consult the report when interpreting the published results.
 
 [Original team repository](https://github.com/ArjunRamphal/COMP703HumanActionRecognition) · [My portfolio](https://darianrobert.github.io/)
+
+## Code readability
+
+The notebook uses consistent Python formatting and concise section comments. The original experiment logic, saved outputs and model settings are preserved; formatting has not been used to regenerate the reported results. The five notebook stages now have a short navigation guide.
